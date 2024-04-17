@@ -19,7 +19,7 @@ expenditure = []
 with open('sales.csv', 'r') as csv_file:
     spreadsheet = csv.DictReader(csv_file)
     for row in spreadsheet:
-        # Assuming 'sales' and 'expenditure' columns are integers
+        # 'sales' and 'expenditure' columns are integers
         sales.append(int(row['sales']))
         expenditure.append(int(row['expenditure']))
 
